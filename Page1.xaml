@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Formulario_a_CV.Page1">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="300" />
+            
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <BoxView Color="Orange"/>
+        <Label Text="name"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        <BoxView Grid.Row="1"
+                 Color="OrangeRed"/>
+        <Label Text="Age"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        <BoxView Grid.Row="2"
+                 Color="DarkOrange"/>
+        <Label Text="address"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        <BoxView Grid.Row="3"
+                 Color="Teal" />
+        <Label Grid.Row="3"
+               Text="work experience"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        <BoxView Grid.Column="1"
+                 Color="Yellow" />
+        <Label Grid.Column="1"
+               Text="Occupation"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        <BoxView Grid.Row="1"
+                 Grid.Column="1"
+                 Color="Green" />
+        <Label Grid.Row="1"
+               Grid.Column="1"
+               Text="{Binding MainContentProperty}"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        <BoxView Grid.Row="2"
+                 Grid.Column="1"
+                 Color="SkyBlue" />
+        <Label Grid.Row="2"
+               Grid.Column="1"
+               Text="Abilities"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        <BoxView Grid.Row="3"
+                 Grid.Column="1"
+                 Color="CadetBlue" />
+        <Label Grid.Row="3"
+               Grid.Column="1"
+               Text="Formation"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+
+    </Grid>
+
+</ContentPage>
